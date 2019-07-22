@@ -39,3 +39,12 @@ def update_counting_hash(hash, key)
   end
   return hash
 end
+
+=begin # Ternary Operator Solution! Achieves Same As Above
+
+ def update_counting_hash(hash, key)
+  hash[key] ? hash[key] += 1 : hash[key] = 1
+  hash
+end
+
+=end
